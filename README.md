@@ -1,5 +1,7 @@
 # DataScienceChallenge
+
 #Exploratory Data Analysis
+
 #a) Relevant metrics
 Total number of queries logged in the given dataset: 3451202
 Total unique Queries: 1244496
