@@ -36,10 +36,10 @@ Percentage of searches with spelling mistakes: 36.73111570983095
 
 #e) Queries leading to click
 #Queries that have  NumOfWords <=5 always lead to click
-#Queries with Item Rank 0 has always led to a click
+#Queries with Item Rank 1 has always led to a click
 
 #f) Which queries doen't seem to have relevant results
-#Those queries that have higher rank don't seem to have relevant results. 
+#Those queries that have higher rank (ItemRank>400) don't seem to have relevant results. 
 
 #h)common URL
 #Websites such as google, apple are the commonly searched websites
@@ -48,12 +48,12 @@ Percentage of searches with spelling mistakes: 36.73111570983095
 #Clustering Analysis
 
 #a) How will I cluster users?
-I will cluster users based on the following statements,
+I will cluster users based on the following,
 #Potential respondants to advertisements vs others
-#Cluster based on the time of the day - Active hours of Students - evening/night, kids - Afternoon and evening,
-#housewife - Afternoon and evening
-#those who search with short query vs long query
 #Based on the search content - Queries have to be categorized into eg. kids search, teenager, adult
+#Cluster based on the time of the day - Active hours of Students - evening/night, kids - Afternoon and evening,
+#housewife/househusband - Afternoon and evening
+#those who search with short query vs long query
 
 
 #b) Features considered
@@ -62,13 +62,14 @@ I will cluster users based on the following statements,
 #number of words in a query
 #Misspelled or not
 #day of the week
+#Query
 
 
 #c) Clustering algorithm
 #I will use kmeans clustering as it doesn't require our data to be distributed normally
 #It is the most effective algorithm
 #Easy to implement
-#Works well with ordinal and nominal data too
+#Works well with ordinal and nominal data as well
 
 
 #d)Choosing the right number of clusters
@@ -79,18 +80,18 @@ I will cluster users based on the following statements,
 #e) Distance metrics for clustering
 #I will use Mahalanobis distance
 #It takes covariance into consideration which lead to elliptical decision boundaries
-#Euclidean distance works well in a dataset which contains same units across all the input variables. In the given dataset that is not the case.
+#We can't consider Euclidean distance for this dataset because it works well in a dataset which contains same units across all the input variables. In the given dataset that is not the case.
 
 #Classification
 #Accuracy of the prediction model is 60.6%
-#Sensitivity of the model is good
-#specificity of the model is relatively low
-#That is only 47% of the no click scenarios have been captured out of the entire no click instances
+#Sensitivity of the model is good (75%)
+#specificity of the model is relatively low (47%). That is only, 47% of the no click scenarios have been captured out of the entire no click instances
 
 #b) Feature Engineering
 #I have dereived features such as 
     #NumOfWords and is_missSpelled from "Query", 
-    #weekday and TimeOfDayCorrected from "QueryTime" for the analysis
+    #weekday and TimeOfDayCorrected from "QueryTime"
+    #Click from "ItemRank" for the analysis
 
 #c) I consider multiple factors while deciding on the right models to build. They are
     #Data type of the target variable
