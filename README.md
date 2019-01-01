@@ -32,14 +32,14 @@ Percentage of searches with spelling mistakes: 36.73111570983095
 
 #d) Queries leading to no click
 #Only 14% of the queries that are misspelled had clicks
-#Queries that has number of words higher than 10 and queries that have spelling mistakes
-#Queries with Item Rank 0 has always led to a click
+#Queries that has number of words higher than 5
 
 #e) Queries leading to click
-#Queries that have  NumOfWords <5 always lead to click
+#Queries that have  NumOfWords <=5 always lead to click
+#Queries with Item Rank 0 has always led to a click
 
 #f) Which queries doen't seem to have relevant results
-#Those queries that have higher rank don't seem to have relevant results
+#Those queries that have higher rank don't seem to have relevant results. 
 
 #h)common URL
 #Websites such as google, apple are the commonly searched websites
@@ -48,18 +48,20 @@ Percentage of searches with spelling mistakes: 36.73111570983095
 #Clustering Analysis
 
 #a) How will I cluster users?
+I will cluster users based on the following statements,
 #Potential respondants to advertisements vs others
-#Based on the time of the day - Active hours - Students - evening/night, kids - Afternoon and evening,
+#Cluster based on the time of the day - Active hours of Students - evening/night, kids - Afternoon and evening,
 #housewife - Afternoon and evening
 #those who search with short query vs long query
-#Based on the search content - Queries have to categorized into eg. kids search, teenager, adult
+#Based on the search content - Queries have to be categorized into eg. kids search, teenager, adult
 
 
 #b) Features considered
-#I will consider the following features
+#I will consider the following features,
 #Time of the day, 
 #number of words in a query
 #Misspelled or not
+#day of the week
 
 
 #c) Clustering algorithm
@@ -76,21 +78,19 @@ Percentage of searches with spelling mistakes: 36.73111570983095
 
 #e) Distance metrics for clustering
 #I will use Mahalanobis distance
-#It takes covariance into consideration which lead tp elliptical decision boundaries
-#Euclidean distance works well in a dataset which contains same units across all the input variables
+#It takes covariance into consideration which lead to elliptical decision boundaries
+#Euclidean distance works well in a dataset which contains same units across all the input variables. In the given dataset that is not the case.
 
 #Classification
 #Accuracy of the prediction model is 60.6%
-#Sensitivity is good
-#specificity is relatively low
-#That is only 47% of the click not occuring condition has been captured out of the entire dataset.
+#Sensitivity of the model is good
+#specificity of the model is relatively low
+#That is only 47% of the no click scenarios have been captured out of the entire no click instances
 
-#b)
+#b) Feature Engineering
 #I have dereived features such as 
     #NumOfWords and is_missSpelled from "Query", 
-    #weekday and TimeOfDayCorrected from "QueryTime"
-#for the analysis
-    
+    #weekday and TimeOfDayCorrected from "QueryTime" for the analysis
 
 #c) I consider multiple factors while deciding on the right models to build. They are
     #Data type of the target variable
@@ -98,7 +98,7 @@ Percentage of searches with spelling mistakes: 36.73111570983095
     #Data type of the input variables
     #Distribution of the target variable
     #balance of the data
-	#Distribution of the error 
+    #Distribution of the error 
     
     
 #d) I use k fold cross validation method with k value as 5.
