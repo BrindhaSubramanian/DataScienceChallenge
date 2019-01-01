@@ -16,7 +16,7 @@ Interesting Insights:
 #The plot shows the highest number of searches occured on "Sundays" followed by "Monday". More ads on these days are recommended 
 #The plot shows the highest number of searches occured in the "evening" followed by "night". More ads during evening time is beneficial 
 #Sunday and Monday have the highest number of instances of user clicking on the url
-Percentage of searches with spelling mistakes: 36.73111570983095
+#Percentage of searches with spelling mistakes: 63.3
 #EVening time has the highest number of instances of user clicking on the url
 #lesser the number of words in the search higher, the instances of navigating to the url
 
@@ -24,7 +24,7 @@ Percentage of searches with spelling mistakes: 36.73111570983095
 #Target customers with ads in the evening and night time
 #Target customers with ads on either Sunday or Monday
 #Many users who visit your search engine are predominantly searching for other search engine providers such as Google and Yahoo. Focus on building a competitive strategy to compete with industry leaders
-#Ad a spell checker and correcter which would help users to obtain desired search results quickly. 36% of the queries contain spelling mistakes.
+#Ad a spell checker and correcter which would help users to obtain desired search results quickly. 63% of the queries contain spelling mistakes.
 #Give page suggestions while typing so that users would avoid typing long sentences to search
 
 #c) common queries
