@@ -1,5 +1,14 @@
 # DataScienceChallenge
 
+Background: The took up this challenge given by an AdTech Startup in Chennai, India in 2019.
+Result: I passed the challenge and proceed to the next round after I submit the solution to the CTO of the start-up
+
+Data Source: http://www.cim.mcgill.ca/~dudek/206/Logs/AOL-user-ct-collection/
+Challenge: Analyse the data and answer questions around Exploratory Analysis, Clustering and Classification
+
+The Question followed by answers are given below:
+And the code used to perform the analysis is attached separately as Jupyter Notebook.
+
 #Exploratory Data Analysis
 
 #a) Relevant metrics
@@ -55,7 +64,6 @@ I will cluster users based on the following,
 #housewife/househusband - Afternoon and evening
 #those who search with short query vs long query
 
-
 #b) Features considered
 #I will consider the following features,
 #Time of the day, 
@@ -64,18 +72,15 @@ I will cluster users based on the following,
 #day of the week
 #Query
 
-
 #c) Clustering algorithm
 #I will use kmeans clustering as it doesn't require our data to be distributed normally
 #It is the most effective algorithm
 #Easy to implement
 #Works well with ordinal and nominal data as well
 
-
 #d)Choosing the right number of clusters
 #I will use Elbow method to choose the optimum number of clusters
 #Elbow method -> sum of square errors -vs number of clusters
-
 
 #e) Distance metrics for clustering
 #I will use Mahalanobis distance
@@ -99,11 +104,9 @@ I will cluster users based on the following,
     #Data type of the input variables
     #Distribution of the target variable
     #balance of the data
-    #Distribution of the error 
+    #Distribution of the error    
     
-    
-#d) I use k fold cross validation method with k value as 5.
-    
+#d) I use k fold cross validation method with k value as 5.   
     
 #e) Metrics to support the reliability of the model:
     #R Squared
