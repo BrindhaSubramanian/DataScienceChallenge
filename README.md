@@ -1,7 +1,7 @@
 # DataScienceChallenge
 
-Background: The took up this challenge given by an AdTech Startup in Chennai, India in 2019.
-Result: I passed the challenge and proceed to the next round after I submit the solution to the CTO of the start-up
+Background: I participated in this challenge given by an AdTech Startup in Chennai, India in 2019.
+Result: I passed the challenge and proceeded to the next round after I submit the solution to the CTO of the start-up
 
 Data Source: http://www.cim.mcgill.ca/~dudek/206/Logs/AOL-user-ct-collection/
 Challenge: Analyse the data and answer questions around Exploratory Analysis, Clustering and Classification
